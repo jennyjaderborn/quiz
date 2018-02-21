@@ -11,40 +11,34 @@ class question {
     return $this->answerOne . " " . $this->question;
     }
 
-    public function writeQuestion() {
-        echo "$this->question <form method='GET'><label>$this->answerOne<input type='radio' name='$this->answerOne'></label>
+    public function writeQuestion() {  
+        echo "$this->question<label>$this->answerOne<input type='radio' name='$this->answerOne'></label>
         <label>$this->answerX<input type='radio' name='$this->answerX'></label>
-        <label>$this->answerTwo<input type='radio' name='$this->answerTwo'></label>
-            <button type='submit'>Resultat</button>
-        </form>";
+        <label>$this->answerTwo<input type='radio' name='$this->answerTwo'></label><br/><br/>";
     }
 
     public function checkAnswers() {
-        print_r($_GET);
+       
     
     }
 
 }
 
-$testar = new Question('Vad heter jag?', 'jenny', 'Klara', 'Moa');
-$testar->writeQuestion();
-$testar->checkAnswers();
+//$testar = new Question('Vad heter jag?', 'jenny', 'Klara', 'Moa');
+//$testar->writeQuestion();
+//$testar->checkAnswers();
 
-$testar2 = new Question('Vad heter du?', 'karin', 'Frida', 'Sofia');
-$testar2->writeQuestion();
-$testar2->checkAnswers();
-
-
-foreach($questions as $key => $value) {
-    $testar3 = new Question($value['question'], $value['answerOne'], $value['answerX'], $value['answerTwo']);
-
-$testar3->writeQuestion();
-}
+//$testar2 = new Question('Vad heter du?', 'karin', 'Frida', 'Sofia');
+//$testar2->writeQuestion();
+//$testar2->checkAnswers();
 
 
 
 
-print_r($questions);
+
+
+
+//print_r($questions);
 
 //print_r($_GET);
 //print_r($testar);
