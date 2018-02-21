@@ -3,24 +3,51 @@
 
 class question {
 
-    function __construct($question, $answerOne) {
+    function __construct($question, $answerOne, $answerX, $answerTwo) {
         $this->question = $question;
         $this->answerOne = $answerOne;
-        //this->answerX = $answerX;
-        //this->answerTwo = $answerTwo;
+        $this->answerX = $answerX;
+        $this->answerTwo = $answerTwo;
     return $this->answerOne . " " . $this->question;
     }
 
     public function writeQuestion() {
-        echo "Mitt namn är $this->answerOne och frågan är: $this->question ";
+        echo "$this->question <form method='GET'><label>$this->answerOne<input type='radio' name='$this->answerOne'></label>
+        <label>$this->answerX<input type='radio' name='$this->answerX'></label>
+        <label>$this->answerTwo<input type='radio' name='$this->answerTwo'></label>
+            <button type='submit'>Resultat</button>
+        </form>";
+    }
+
+    public function checkAnswers() {
+        print_r($_GET);
+    
     }
 
 }
 
-$testar = new Question('Vad heter jag?', 'jenny');
+$testar = new Question('Vad heter jag?', 'jenny', 'Klara', 'Moa');
 $testar->writeQuestion();
+$testar->checkAnswers();
 
-print_r($testar);
+$testar2 = new Question('Vad heter du?', 'karin', 'Frida', 'Sofia');
+$testar2->writeQuestion();
+$testar2->checkAnswers();
+
+
+foreach($questions as $key => $value) {
+    $testar3 = new Question($value['question'], $value['answerOne'], $value['answerX'], $value['answerTwo']);
+
+$testar3->writeQuestion();
+}
+
+
+
+
+print_r($questions);
+
+//print_r($_GET);
+//print_r($testar);
 
 
 /*en class question 

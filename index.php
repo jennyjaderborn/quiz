@@ -4,10 +4,10 @@ include 'header.php';
 
 ?>
 
-<form method="GET">
+<!--<form method="GET">
    <label>Frågan<input type="radio" name="svar"></label>
     <button type="submit">Resultat</button>
-</form>
+</form>-->
 
 <?php
 
