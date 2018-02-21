@@ -1,25 +1,53 @@
 
 <?php 
+include 'data.php';
 
 class question {
 
-    function __construct($question, $answerOne, $answerX, $answerTwo) {
+    function __construct($question, $answerOne, $answerX, $answerTwo, $correctAnswer) {
         $this->question = $question;
         $this->answerOne = $answerOne;
         $this->answerX = $answerX;
         $this->answerTwo = $answerTwo;
+        $this->correctAnswer = $correctAnswer;
+
     return $this->answerOne . " " . $this->question;
     }
 
-    public function writeQuestion() {  
-        echo "$this->question<label>$this->answerOne<input type='radio' name='$this->answerOne'></label>
-        <label>$this->answerX<input type='radio' name='$this->answerX'></label>
-        <label>$this->answerTwo<input type='radio' name='$this->answerTwo'></label><br/><br/>";
+    public function writeQuestion() {
+        echo "$this->question<label>$this->answerOne <input type='checkbox' name='check_list[]' value='$this->answerOne'></label>
+        <label>$this->answerX<input type='checkbox' name='check_list[]' value='$this->answerX'></label>
+        <label>$this->answerTwo<input type='checkbox' name='check_list[]' value='$this->answerTwo'></label><br/><br/>";
+    }
+
+    public function getChecked() {
+
+        if(!empty($_GET['check_list'])) {
+            foreach($_GET['check_list'] as $check) {
+                    echo $check;
+                }
+                }
+        //if (isset($_GET['submit'])) {
+            //if(isset($_GET['checkbox']))
+            //{
+                /*print_r($_GET['checkbox']);
+                $checkade = $_GET['checkbox'];
+            
+                foreach($checkade as $select){
+                echo "$select";
+                }*/
+                
+            //echo "You have selected :".$_GET['checkbox'];  //  Displaying Selected Value
+           // }
+        
     }
 
     public function checkAnswers() {
-       
-    
+
+        echo "$this->correctAnswer";
+    //print_r($_GET[$this->answerOne]);
+
+
     }
 
 }
