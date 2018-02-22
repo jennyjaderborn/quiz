@@ -2,32 +2,36 @@
 
 $questions  = array(
     1 => array(
-        'question'    => 'Vad heter du?',
-        'answerOne'     => 'Peter',
-        'answerX' => 'Karl',
-        'answerTwo' => 'Timmy',
-        'correctAnswer' => 'answer2'     
+        'question' => 'Vad är detta för djur?',
+        'answerOne' => 'Rådjur',
+        'answerX' => 'Ko',
+        'answerTwo' => 'Get',
+        'correctAnswer' => 'answer1',
+        'image' => './radjur.jpg'     
     ),
     2 => array(
-        'question'    => 'Vad heter jag?',
-        'answerOne'     => 'Conrad',
-        'answerX' => 'Johan',
-        'answerTwo' => 'Alex',
-        'correctAnswer' => 'answer2'         
+        'question' => 'Vad heter hundens barn?',
+        'answerOne' => 'Kalvar',
+        'answerX' => 'Valpar',
+        'answerTwo' => 'Kid',
+        'correctAnswer' => 'answerx',
+        'image' => 'radjur.jpg'             
     ),
     3 => array(
-        'question'    => 'Vad är din favoriträtt?',
-        'answerOne'     => 'Tacos',
-        'answerX' => 'Pizza',
-        'answerTwo' => 'Pannkaka',  
-        'correctAnswer' => 'answer2'    
+        'question'    => 'Vad är Makrill för typ av djur?',
+        'answerOne'     => 'En fågel',
+        'answerX' => 'En fisk',
+        'answerTwo' => 'En hund',  
+        'correctAnswer' => 'answerx', 
+        'image' => 'radjur.jpg'        
     ),
     4 => array(
-        'question'    => 'Vart bor du?',
-        'answerOne'     => 'London',
-        'answerX' => 'Miami',
-        'answerTwo' => 'Barcelona',
-        'correctAnswer' => 'answer2'    
+        'question'    => 'Finns det björnar i Sverige?',
+        'answerOne'     => 'Ja',
+        'answerX' => 'Nej',
+        'answerTwo' => 'En hund',
+        'correctAnswer' => 'answer1',
+        'image' => 'radjur.jpg'        
     )
 );
 

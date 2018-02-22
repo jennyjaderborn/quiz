@@ -6,24 +6,30 @@ $answersCorrect = 0;
 
 class question {
 
-    function __construct($question, $answerOne, $answerX, $answerTwo, $correctAnswer, $key) {
+    function __construct($question, $answerOne, $answerX, $answerTwo, $correctAnswer, $image, $key) {
         $this->question = $question;
         $this->answerOne = $answerOne;
         $this->answerX = $answerX;
         $this->answerTwo = $answerTwo;
         $this->correctAnswer = $correctAnswer;
+        $this->image = $image;
         $this->key = $key;
 
     return $this->answerOne . " " . $this->question;
     }
 
     public function writeQuestion() {
-        echo "<h2>$this->question</h2>$this->answerOne
-        <input type='radio' name='$this->answerOne' id='$this->key' value='$this->answerOne'>
-        $this->answerX
-        <input type='radio' name='$this->answerX' id='$this->key' value='$this->answerX'>
-        $this->answerTwo
-        <input type='radio' name='$this->answerTwo' id='$this->key' value='$this->answerTwo'><br/><br/>";
+        echo "<img src='$this->image'><h2>$this->question</h2>
+        <div class='options'>
+        <label for='$this->key'>$this->answerOne
+        <input type='radio' name='$this->answerOne' id='$this->key' value='$this->answerOne'></label>
+
+        <label for='$this->key'>$this->answerX
+        <input type='radio' name='$this->answerX' id='$this->key' value='$this->answerX'></label>
+
+        <label for='$this->key'>$this->answerTwo
+        <input type='radio' name='$this->answerTwo' id='$this->key' value='$this->answerTwo'></label>
+        </div>";
     }
 
     public function getChecked() {
