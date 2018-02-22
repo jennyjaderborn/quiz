@@ -21,7 +21,7 @@ class question {
     public function writeQuestion() {
         echo "<img src='$this->image'><h2>$this->question</h2>
         <div class='options'>
-        <label for='$this->key'>$this->answerOne
+        <label for='$this->key'> $this->answerOne
         <input type='radio' name='$this->answerOne' id='$this->key' value='$this->answerOne'></label>
 
         <label for='$this->key'>$this->answerX

@@ -10,28 +10,60 @@ $questions  = array(
         'image' => './radjur.jpg'     
     ),
     2 => array(
-        'question' => 'Vad heter hundens barn?',
-        'answerOne' => 'Kalvar',
-        'answerX' => 'Valpar',
-        'answerTwo' => 'Kid',
-        'correctAnswer' => 'answerx',
-        'image' => 'radjur.jpg'             
+        'question' => 'Vilket djur har detta mönster?',
+        'answerOne' => 'Noshörning',
+        'answerX' => 'Leopard',
+        'answerTwo' => 'Giraff',
+        'correctAnswer' => 'answer2',
+        'image' => './giraff.jpg'             
     ),
     3 => array(
-        'question'    => 'Vad är Makrill för typ av djur?',
-        'answerOne'     => 'En fågel',
-        'answerX' => 'En fisk',
-        'answerTwo' => 'En hund',  
-        'correctAnswer' => 'answerx', 
-        'image' => 'radjur.jpg'        
+        'question' => 'Vilket djur på bilden?',
+        'answerOne'  => 'Sengångare',
+        'answerX' => 'En iller',
+        'answerTwo' => 'En koala',  
+        'correctAnswer' => 'answer1', 
+        'image' => './sengangare.jpg'        
     ),
     4 => array(
-        'question'    => 'Finns det björnar i Sverige?',
-        'answerOne'     => 'Ja',
-        'answerX' => 'Nej',
-        'answerTwo' => 'En hund',
+        'question'    => 'Vilket djur hör dessa till?',
+        'answerOne'     => 'Häst',
+        'answerX' => 'Älg',
+        'answerTwo' => 'Zebra',
+        'correctAnswer' => 'answerx',
+        'image' => './alg.jpg'        
+    ),
+    5 => array(
+        'question'    => 'Känner du igen vilket djur?',
+        'answerOne'     => 'Påfågel',
+        'answerX' => 'Fjäril',
+        'answerTwo' => 'Ödla',
         'correctAnswer' => 'answer1',
-        'image' => 'radjur.jpg'        
+        'image' => './pafagel.jpg'        
+    ),
+    6 => array(
+        'question'    => 'Vems?',
+        'answerOne'     => 'Kamelens',
+        'answerX' => 'Åsnans',
+        'answerTwo' => 'Hästens',
+        'correctAnswer' => 'answer2',
+        'image' => './hast.jpg'        
+    ),
+    7 => array(
+        'question'    => 'Vem har tappat dessa?',
+        'answerOne'     => 'Älgen',
+        'answerX' => 'Renen',
+        'answerTwo' => 'Geten',
+        'correctAnswer' => 'answerx',
+        'image' => './renhorn.jpg'        
+    ),
+    8 => array(
+        'question'    => 'Vad kallas "bebisen"?',
+        'answerOne'     => 'Killing',
+        'answerX' => 'Kulting',
+        'answerTwo' => 'Kulling',
+        'correctAnswer' => 'answer1',
+        'image' => './killing.jpg'        
     )
 );
 

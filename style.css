@@ -10,19 +10,27 @@ header {
 
 .correct {
     color: green;
+    text-align: center;
 }
 
 .wrong {
     color: red;
+    text-align: center;
 }
 
 .options {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
 }
 
 img {
     width: 400px;
+    height: 300px;
 }
 
 #content {
@@ -30,4 +38,23 @@ img {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+button {
+    width: 300px;
+    height: 30px;
+    margin: 15px;
+}
+
+label {
+    margin: 10px;
 }
