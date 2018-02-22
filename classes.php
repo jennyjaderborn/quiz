@@ -34,6 +34,10 @@ class question {
 
     public function getChecked() {
 
+        if(isset($_GET[$this->answerOne]) && isset($_GET[$this->answerX]) && isset($_GET[$this->answerTwo])){
+            echo "Du kan bara välja ett alternativ på varje fråga!";
+        } else {
+
         if(isset($_GET[$this->answerOne])){
             if('answer1' == $this->correctAnswer){
                 echo "<p class='correct'>Rätt</p>";
@@ -61,6 +65,9 @@ class question {
                 echo "<p class='wrong'>Fel</p>";;
             }
         }
+
+    }
+    
 
 
 

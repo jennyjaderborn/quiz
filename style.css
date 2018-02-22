@@ -3,9 +3,12 @@ body {
     padding: 0px;
 }
 header {
-    height: 200px;
+    height: 150px;
     width: 100%;
-    /*background-color: #49A549;*/
+    background-color: rgba(23, 87, 17, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .correct {
@@ -34,6 +37,7 @@ img {
 }
 
 #content {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -50,11 +54,21 @@ form {
 
 
 button {
-    width: 300px;
+    width: 200px;
     height: 30px;
     margin: 15px;
+    background-color: rgba(23, 87, 17, 0.9);
+    border: none;
+    color: white;
+    font-size: 14px;
 }
 
 label {
     margin: 10px;
 }
+
+h1 {
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+}
+
