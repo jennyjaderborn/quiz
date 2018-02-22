@@ -1,6 +1,5 @@
 <?php
     include 'data.php';
-    include 'functions.php';
     include 'classes.php';
 ?>
 <!DOCTYPE html>

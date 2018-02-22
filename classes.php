@@ -2,6 +2,8 @@
 <?php 
 include 'data.php';
 
+$answersCorrect = 0;
+
 class question {
 
     function __construct($question, $answerOne, $answerX, $answerTwo, $correctAnswer, $key) {
@@ -16,15 +18,63 @@ class question {
     }
 
     public function writeQuestion() {
-        echo "<div><h2>$this->question</h2><label for='$this->key'>$this->answerOne</label> <input type='radio' name='$this->key' id='$this->key' value='$this->answerOne'>
-        <label for='for='$this->answerTwo'>$this->answerX<input type='radio' name='$this->key' id='$this->key' value='$this->answerX'></label>
-        <label>$this->answerTwo<input type='radio' name='$this->key' id='$this->key' value='$this->answerTwo'></label></div><br/><br/>";
+        echo "<h2>$this->question</h2>$this->answerOne
+        <input type='radio' name='$this->answerOne' id='$this->key' value='$this->answerOne'>
+        $this->answerX
+        <input type='radio' name='$this->answerX' id='$this->key' value='$this->answerX'>
+        $this->answerTwo
+        <input type='radio' name='$this->answerTwo' id='$this->key' value='$this->answerTwo'><br/><br/>";
     }
 
     public function getChecked() {
 
-        print_r($_GET);
+        if(isset($_GET[$this->answerOne])){
+            if('answer1' == $this->correctAnswer){
+                echo "<p class='correct'>Rätt</p>";
+                $GLOBALS["answersCorrect"] ++;
+            } else {
+                echo "<p class='wrong'>Fel</p>";
+            }
+        }
 
+
+        if(isset($_GET[$this->answerX])){
+            if('answerx' == $this->correctAnswer){
+                echo "<p class='correct'>Rätt</p>";
+                $GLOBALS["answersCorrect"] ++;
+            } else {
+                echo "<p class='wrong'>Fel</p>";
+            }
+        }
+
+        if(isset($_GET[$this->answerTwo])){
+            if('answer2' == $this->correctAnswer){
+                echo "<p class='correct'>Rätt</p>";
+                $GLOBALS["answersCorrect"] ++;
+            } else {
+                echo "<p class='wrong'>Fel</p>";;
+            }
+        }
+
+
+
+        /*$checkade = $_GET;
+        //print_r($checkade);
+
+        foreach($checkade as $checkad){
+            //echo "du svarade $checkad";
+
+            if ($checkad == $this->correctAnswer )//{ alltså kolla med isset om den finns! om den är ikryssad finns den  ej i post. sen kolla om den är rätt med correkt answer 
+                echo "RÄTT";
+            } else{
+                return null;
+            }
+
+            /*foreach($questions as $key => $value)
+            if($checkad == $value['correctAnswer']){
+                echo "hahaha";
+            }*/
+        //}
         /*if(!empty($_GET['check_list'])) {
             foreach($_GET['check_list'] as $check) {
                     echo $check;
@@ -47,7 +97,8 @@ class question {
 
     public function checkAnswers() {
 
-        echo "$this->correctAnswer";
+        //echo "$this->correctAnswer";
+        
     //print_r($_GET[$this->answerOne]);
 
 
