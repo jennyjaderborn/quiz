@@ -18,16 +18,16 @@ class question {
     }
 
     public function writeQuestion() {
-        echo "<img src='$this->image'><h2>$this->key $this->question</h2>
+        echo "<img src='$this->image'><h2>$this->key . $this->question</h2>
         <div class='options'>
-        <label for='$this->key'> $this->answerOne";
+        <label for='$this->key'> 1. $this->answerOne";
 
         echo '<input type="radio" name="options' . $this->key . '[]" id=" ' . $this->key . '" value="' . $this->answerOne . '"></label>';
 
-        echo "<label for='$this->key'>$this->answerX";
+        echo "<label for='$this->key'> X. $this->answerX";
         echo '<input type="radio" name="options' . $this->key . '[]" id=" ' . $this->key . '" value="' . $this->answerX . '"></label>';
 
-        echo "<label for='$this->key'>$this->answerTwo";
+        echo "<label for='$this->key'> 2. $this->answerTwo";
         echo '<input type="radio" name="options' . $this->key . '[]" id=" ' . $this->key . '" value="' . $this->answerTwo . '"></label>';
         //<input type='radio' name='options . $this->key' id='$this->key' value='$this->answerTwo'></label>
         echo "</div>";
