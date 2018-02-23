@@ -5,13 +5,12 @@ include 'header.php';
 ?>
 
 
-<form method="GET">
+<form method="POST">
 <?php
   foreach($questions as $key => $value) {
-    $testar3 = new Question($value['question'], $value['answerOne'], $value['answerX'], $value['answerTwo'], $value['correctAnswer'], $value['image'], $key);
-    $testar3->writeQuestion();
-    $testar3->checkAnswers();
-    $testar3->getChecked();
+    $newQuestion = new Question($value['question'], $value['answerOne'], $value['answerX'], $value['answerTwo'], $value['correctAnswer'], $value['image'], $key);
+    $newQuestion->writeQuestion();
+    $newQuestion->checkAnswer();
 }
 
 
@@ -20,7 +19,7 @@ include 'header.php';
 </form>
 
 <?php
-    if ( $_SERVER['REQUEST_METHOD'] == 'GET' ) {
+    if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
             
         echo 'Du hade ' . $GLOBALS["answersCorrect"] . ' / ' . count($questions) . ' rätt.';
             

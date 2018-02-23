@@ -6,7 +6,7 @@ $questions  = array(
         'answerOne' => 'Rådjur',
         'answerX' => 'Ko',
         'answerTwo' => 'Get',
-        'correctAnswer' => 'answer1',
+        'correctAnswer' => 'Rådjur',
         'image' => './radjur.jpg'     
     ),
     2 => array(
@@ -14,7 +14,7 @@ $questions  = array(
         'answerOne' => 'Noshörning',
         'answerX' => 'Leopard',
         'answerTwo' => 'Giraff',
-        'correctAnswer' => 'answer2',
+        'correctAnswer' => 'Giraff',
         'image' => './giraff.jpg'             
     ),
     3 => array(
@@ -22,7 +22,7 @@ $questions  = array(
         'answerOne'  => 'Sengångare',
         'answerX' => 'En iller',
         'answerTwo' => 'En koala',  
-        'correctAnswer' => 'answer1', 
+        'correctAnswer' => 'Sengångare', 
         'image' => './sengangare.jpg'        
     ),
     4 => array(
@@ -30,7 +30,7 @@ $questions  = array(
         'answerOne'     => 'Häst',
         'answerX' => 'Älg',
         'answerTwo' => 'Zebra',
-        'correctAnswer' => 'answerx',
+        'correctAnswer' => 'Älg',
         'image' => './alg.jpg'        
     ),
     5 => array(
@@ -38,7 +38,7 @@ $questions  = array(
         'answerOne'     => 'Påfågel',
         'answerX' => 'Fjäril',
         'answerTwo' => 'Ödla',
-        'correctAnswer' => 'answer1',
+        'correctAnswer' => 'Påfågel',
         'image' => './pafagel.jpg'        
     ),
     6 => array(
@@ -46,7 +46,7 @@ $questions  = array(
         'answerOne'     => 'Kamelens',
         'answerX' => 'Åsnans',
         'answerTwo' => 'Hästens',
-        'correctAnswer' => 'answer2',
+        'correctAnswer' => 'Hästens',
         'image' => './hast.jpg'        
     ),
     7 => array(
@@ -54,7 +54,7 @@ $questions  = array(
         'answerOne'     => 'Älgen',
         'answerX' => 'Renen',
         'answerTwo' => 'Geten',
-        'correctAnswer' => 'answerx',
+        'correctAnswer' => 'Renen',
         'image' => './renhorn.jpg'        
     ),
     8 => array(
@@ -62,7 +62,7 @@ $questions  = array(
         'answerOne'     => 'Killing',
         'answerX' => 'Kulting',
         'answerTwo' => 'Kulling',
-        'correctAnswer' => 'answer1',
+        'correctAnswer' => 'Killing',
         'image' => './killing.jpg'        
     )
 );
