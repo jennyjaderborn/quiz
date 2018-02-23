@@ -7,7 +7,7 @@ $questions  = array(
         'answerX' => 'Ko',
         'answerTwo' => 'Get',
         'correctAnswer' => 'Rådjur',
-        'image' => './radjur.jpg'     
+        'image' => './img/radjur.jpg'     
     ),
     2 => array(
         'question' => 'Vilket djur har detta mönster?',
@@ -15,7 +15,7 @@ $questions  = array(
         'answerX' => 'Leopard',
         'answerTwo' => 'Giraff',
         'correctAnswer' => 'Giraff',
-        'image' => './giraff.jpg'             
+        'image' => './img/giraff.jpg'             
     ),
     3 => array(
         'question' => 'Vilket djur på bilden?',
@@ -23,7 +23,7 @@ $questions  = array(
         'answerX' => 'En iller',
         'answerTwo' => 'En koala',  
         'correctAnswer' => 'Sengångare', 
-        'image' => './sengangare.jpg'        
+        'image' => './img/sengangare.jpg'        
     ),
     4 => array(
         'question'    => 'Vilket djur hör dessa till?',
@@ -31,7 +31,7 @@ $questions  = array(
         'answerX' => 'Älg',
         'answerTwo' => 'Zebra',
         'correctAnswer' => 'Älg',
-        'image' => './alg.jpg'        
+        'image' => './img/alg.jpg'        
     ),
     5 => array(
         'question'    => 'Känner du igen vilket djur?',
@@ -39,7 +39,7 @@ $questions  = array(
         'answerX' => 'Fjäril',
         'answerTwo' => 'Ödla',
         'correctAnswer' => 'Påfågel',
-        'image' => './pafagel.jpg'        
+        'image' => './img/pafagel.jpg'        
     ),
     6 => array(
         'question'    => 'Vems?',
@@ -47,7 +47,7 @@ $questions  = array(
         'answerX' => 'Åsnans',
         'answerTwo' => 'Hästens',
         'correctAnswer' => 'Hästens',
-        'image' => './hast.jpg'        
+        'image' => './img/hast.jpg'        
     ),
     7 => array(
         'question'    => 'Vem har tappat dessa?',
@@ -55,7 +55,7 @@ $questions  = array(
         'answerX' => 'Renen',
         'answerTwo' => 'Geten',
         'correctAnswer' => 'Renen',
-        'image' => './renhorn.jpg'        
+        'image' => './img/renhorn.jpg'        
     ),
     8 => array(
         'question'    => 'Vad kallas "bebisen"?',
@@ -63,7 +63,7 @@ $questions  = array(
         'answerX' => 'Kulting',
         'answerTwo' => 'Kulling',
         'correctAnswer' => 'Killing',
-        'image' => './killing.jpg'        
+        'image' => './img/killing.jpg'        
     )
 );
 

@@ -50,7 +50,7 @@ class question {
                     echo "<p class='wrong'>Fel</p>";
                 }
             }
-        }
+        }    
 
     }
 

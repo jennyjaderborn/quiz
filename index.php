@@ -4,13 +4,7 @@ include 'header.php';
 
 ?>
 
-<?php
-    if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
-            
-        echo '<p class="resultat">Du hade ' . $GLOBALS["answersCorrect"] . ' / ' . count($questions) . ' rätt!</p>';
-            
-        }
-    ?>
+
 
 <form method="POST">
 <?php
@@ -25,7 +19,13 @@ include 'header.php';
     <button type="submit" name="submit">Resultat</button>
 </form>
 
-
+<?php
+    if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
+            
+        echo '<p class="resultat"> Du hade ' . $GLOBALS["answersCorrect"] . ' / ' . count($questions) . ' rätt.</p>';
+            
+        }
+    ?>
 
 <?php
 
