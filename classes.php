@@ -1,6 +1,5 @@
 
 <?php 
-include 'data.php';
 
 $answersCorrect = 0;
 
